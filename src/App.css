@@ -206,6 +206,9 @@ main, main * {
   background-color: var(--dark-color);
 }
 
+.landing_page, .landing_page * {
+  overflow: hidden;
+}
 .landing_page h1 {
   font-size: 4rem;
   text-align: center;
