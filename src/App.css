@@ -361,8 +361,36 @@ main, main * {
   overflow: visible;
 }
 
+.alice-carousel {
+  position: relative;
+}
+
 .produits img {
   width: 100vw;
+}
+
+.produits .arrow {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 35%;
+  background-color: transparent;
+}
+
+.produits .arrow img {
+  width: 2rem;
+  background-color: inherit;
+  opacity: 30%;
+}
+
+.left {
+  transform: rotate(90deg);
+  left: 0;
+}
+
+.right {
+  transform: rotate(270deg);
+  right: 0;
 }
 
 

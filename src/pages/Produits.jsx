@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
+import fleche from "../assets/fleche.png";
 import Menu1 from "../assets/Menu1.jpg";
 import Menu2 from "../assets/Menu2.jpg";
 import Menu3 from "../assets/Menu3.jpg";
@@ -64,9 +65,23 @@ function Produits({ helmet }) {
           mouseTracking
           disableDotsControls
           infinite
-          keyboardNavigation="true"
           items={items}
           responsive={responsive}
+          keyboardNavigation
+          renderPrevButton={() => {
+            return (
+              <div className="left arrow">
+                <img src={fleche} alt="fleche gauche" />
+              </div>
+            );
+          }}
+          renderNextButton={() => {
+            return (
+              <div className="right arrow">
+                <img src={fleche} alt="fleche droite" />
+              </div>
+            );
+          }}
         />
       </section>
     </div>
