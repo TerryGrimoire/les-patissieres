@@ -188,6 +188,13 @@ height: 2rem;
   padding: 1rem 3rem;
 }
 
+main {
+  margin: 0;
+  border: none;
+}
+main, main * {
+  overflow: hidden;
+}
 /************* LANDING IMAGE *************/
 .landing_page {
   display: flex;
@@ -233,7 +240,7 @@ height: 2rem;
   /***************** HISTOIRE *****************/
 
   .histoire {
-    margin: 0 0 -0.1rem;
+    margin: 0 0 -0.5rem;
     padding-top: 7rem;
     display: flex;
     flex-direction: column;
@@ -294,7 +301,7 @@ height: 2rem;
 /********************************* NOTRE HISTOIRE SHAPES BOTTOM ********************************/
 .custom-shape-divider-bottom-1671378180 {
   position: absolute;
-  bottom: 0;
+  bottom: 0rem;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -337,6 +344,21 @@ height: 2rem;
   fill: #D0307D;
 }
 
+/********************************************************************* Produits *********************************************************************/ 
+.produits {
+  height: fit-content;
+  margin: 2rem 0;
+}
+
+.produits iframe {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+
+/********************************************************************* Page 1 *********************************************************************/ 
+/********************************************************************* Page 1 *********************************************************************/ 
 /********************************************************************* Page 1 *********************************************************************/ 
 
 
@@ -373,10 +395,12 @@ width: 90%;
 
 .footer {
   padding: 1rem 2rem;
-  margin-top: -0.5rem;
   align-items: flex-start;
   background-color: var(--light-color);
   color: var(--dark-color);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer * {

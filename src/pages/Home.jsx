@@ -70,9 +70,9 @@ export default function Home({ helmet }) {
             odit tenetur.
           </p>
         </article>
-        <Link to="/histoire">
+        <Link to="/Soutien">
           <button type="button" className="button_style">
-            En savoir plus
+            Nous soutenir
           </button>
         </Link>
         <div className="custom-shape-divider-bottom-1671378180">
@@ -121,7 +121,7 @@ export default function Home({ helmet }) {
         </article>
         <Link to="/soutien">
           <button type="button" className="button_style">
-            Nous soutenir
+            Voir les formules
           </button>
           <div className="custom-shape-divider-bottom-1671377551">
             <svg
@@ -167,9 +167,9 @@ export default function Home({ helmet }) {
             odit tenetur.
           </p>
         </article>
-        <Link to="/soutien">
+        <Link to="/Produits">
           <button type="button" className="button_style">
-            Nous soutenir
+            Découvrir nos pâtisseries
           </button>
         </Link>
         <div className="custom-shape-divider-bottom-1671378180">
