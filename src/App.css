@@ -354,7 +354,7 @@ main, main * {
   height: fit-content;
   margin: 2rem 0;
 }
-.produits * {
+.produits, .produits * {
   overflow: visible;
 }
 
