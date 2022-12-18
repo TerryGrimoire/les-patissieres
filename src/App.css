@@ -204,6 +204,7 @@ main, main * {
   height: 90vh;
   margin: 1rem 0 2rem;
   background-color: var(--dark-color);
+  position: relative;
 }
 
 .landing_page, .landing_page * {
