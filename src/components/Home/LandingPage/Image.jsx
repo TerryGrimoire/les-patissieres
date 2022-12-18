@@ -16,7 +16,7 @@ function Image({ title }) {
   */
 
   const landingData = {
-    h2: "Belle phrase d'accroche",
+    h2: "Les saveurs péi au goût du jour",
     alt: "decription de l'image",
   };
   return (

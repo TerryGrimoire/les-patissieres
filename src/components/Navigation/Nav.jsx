@@ -12,19 +12,19 @@ function Nav({ setOpenBurger }) {
       >
         <img src={croix} alt="croix pour fermer la navigation sur la page" />
       </button>
-      <Link to="/">
+      <Link to="/Histoire">
         <button type="button" onClick={() => setOpenBurger(false)}>
-          Accueil
+          Notre histoire
         </button>
       </Link>
-      <Link to="/Services">
+      <Link to="/Produits">
         <button type="button" onClick={() => setOpenBurger(false)}>
-          Services
+          Nos produits
         </button>
       </Link>
-      <Link to="/Tarifs">
+      <Link to="/Soutien">
         <button type="button" onClick={() => setOpenBurger(false)}>
-          Tarifs
+          Nous soutenir
         </button>
       </Link>
       <Link to="/Contact">

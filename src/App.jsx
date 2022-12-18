@@ -2,8 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
-import Services from "./pages/Services";
-import Tarifs from "./pages/Tarifs";
+import Produits from "./pages/Produits";
+import Histoire from "./pages/Histoire";
 import Contact from "./pages/Contact";
 import Mentions from "./pages/Mentions";
 
@@ -11,17 +11,18 @@ import "./App.css";
 
 function App() {
   const helmet = {
-    title: "Change Title",
-    href: "https://changehref.com",
-    description: "Change description",
+    title: "Les Pâtissières",
+    href: "lespatissieres.re",
+    description:
+      "Nous avons décliné pour vous les saveurs péi en version salée et sucrée. Pâtisserie française créolisée, restauration du midi végétarienne aux épices et aromates locaux. Les fruits et légumes sont locaux et de saison, les pâtisseries sucrées et salées sont des créations.",
   };
   return (
     <BrowserRouter>
       <Header helmet={helmet} />
       <Routes>
         <Route path="/" element={<Home helmet={helmet} />} />
-        <Route path="/Services" element={<Services helmet={helmet} />} />
-        <Route path="/Tarifs" element={<Tarifs helmet={helmet} />} />
+        <Route path="/Produits" element={<Produits helmet={helmet} />} />
+        <Route path="/Histoire" element={<Histoire helmet={helmet} />} />
         <Route path="/Contact" element={<Contact helmet={helmet} />} />
         <Route path="/Mentions" element={<Mentions />} />
       </Routes>

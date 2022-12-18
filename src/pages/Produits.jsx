@@ -1,19 +1,19 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-function Services({ helmet }) {
+function Produits({ helmet }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <div>
       <Helmet>
-        <title> {helmet.title} | Services </title>
-        <link rel="canonical" href={`${helmet.href}/Services`} />
+        <title> {helmet.title} | Produits </title>
+        <link rel="canonical" href={`${helmet.href}/Produits`} />
         <meta name="description" content={helmet.description} />
       </Helmet>
     </div>
   );
 }
 
-export default Services;
+export default Produits;
