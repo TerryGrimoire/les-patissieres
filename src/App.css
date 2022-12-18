@@ -202,9 +202,10 @@ main, main * {
   justify-content: center;
   align-items: center;
   height: 90vh;
-  margin: 1rem 0 2rem;
+  margin: 0;
   background-color: var(--dark-color);
   position: relative;
+  padding: 0;
 }
 
 .landing_page, .landing_page * {
@@ -232,7 +233,6 @@ main, main * {
     background-position: 50%;
     min-width: 100vw;
     max-height: 100%;
-    overflow: hidden;
   }
   .veil {
     position: absolute;
