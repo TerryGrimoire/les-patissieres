@@ -29,7 +29,8 @@
 
 h1,h3 {
   font-family: var(--font-title);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
+
 }
 
 a {
