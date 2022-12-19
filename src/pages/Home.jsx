@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import Image from "../components/Home/LandingPage/Image";
 import histoire from "../assets/histoire.png";
 import soutien from "../assets/soutien.png";
+import contact from "../assets/contact.png";
 
 export default function Home({ helmet }) {
   useEffect(() => {
@@ -150,7 +151,7 @@ export default function Home({ helmet }) {
       <section className="histoire">
         <h3>Dernière chance</h3>
         <img
-          src={soutien}
+          src={contact}
           alt="Deux pâtissières souriantes tenant des spécialités locales"
         />
         <article>
