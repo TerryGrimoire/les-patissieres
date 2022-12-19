@@ -77,15 +77,26 @@ function Contact({ helmet }) {
           />
         </svg>
       </div>
-      <div className="contact_top">
-        <h1>Nous joindre</h1>
-        <div>
-          <p>Par téléphone : {infos.Numéro}</p>
-          <p>Par Email : {infos.Email}</p>
-          <p>Nous retrouver : {infos.Adresse}</p>
+
+      {infos.Numéro ? (
+        <div className="contact_top">
+          <h1>Nous joindre</h1>
+          <div>
+            <p>Par téléphone : {infos.Numéro}</p>
+            <p>Par Email : {infos.Email}</p>
+            <p>Nous retrouver : {infos.Adresse}</p>
+          </div>
+          <iframe src={infos.Maps} title="iframe google maps" />
         </div>
-        <iframe src={infos.Maps} title="iframe google maps" />
-      </div>
+      ) : (
+        <div className="loading">
+          <img
+            src="https://i.giphy.com/media/IhDl4HVi26olRLZNu0/giphy.webp"
+            alt="chargement en cours"
+          />
+        </div>
+      )}
+
       <div className="contact_horaires light_bg">
         <h2>Nos horaires</h2>
         {
@@ -199,7 +210,7 @@ function Contact({ helmet }) {
       </div>
 
       <div className="contact_paiements">
-        <h2>Moyens de paiement acceptés</h2>
+        <h2>Paiement acceptés</h2>
         {infos.Especes === "OUI" && <p>▫️ Espèces</p>}
         {infos.Carte === "OUI" && <p>▫️ Carte Bancaire</p>}
         {infos.Tickets === "OUI" && <p>▫️ Tickets restaurants</p>}

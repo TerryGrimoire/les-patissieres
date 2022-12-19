@@ -75,7 +75,7 @@ function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          <ul className="flex align-center justify-start">
+          <ul className="flex align-center justify-start terry">
             <li>
               <img src={grimoirenumerique} alt="logo de Facebook" />
             </li>

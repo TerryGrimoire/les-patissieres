@@ -587,7 +587,7 @@ margin: 8rem 0 2rem;
 .contact_horaires div {
   font-size: 1.1rem;
   margin: 1rem 0;
-} 
+}
 
 .contact_feries {
   display: flex;
@@ -607,7 +607,13 @@ margin: 8rem 0 2rem;
 }
 
 .contact_paiements h2 {
-  margin-bottom: 2rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+.contact_paiements  p {
+
+  margin: 1rem 0;
 
 }
 
@@ -631,6 +637,7 @@ margin: 8rem 0 2rem;
   width:40%;
 }
 
+
 /********************************************************************* FOOTER *********************************************************************/ 
 
 .footer {
@@ -647,6 +654,7 @@ margin: 8rem 0 2rem;
   padding: 0.35rem 0;
   background-color: inherit;
   color: inherit;
+  overflow: hidden;
 }
 
 .footer li, .footer a, .footer div {
@@ -656,15 +664,35 @@ margin: 8rem 0 2rem;
   width: 100%;
 }
 
+.footer_contact ul {
+  display: flex;
+  justify-content: space-between;
+
+}
+
 .footer img {
-  width: 3rem;
+  width: 2rem;
   margin: 0 0.25rem;
 }
 
-.mentions {
+.footer_bottom {
+  display: flex;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  margin: 2rem 1rem 0;
+}
+
+.terry img {
+  width: 20vw;
+}
+
+.mentions_obligatoires {
+  line-height: 1.25;
+}
+
+.mentions_obligatoires a {
+  text-decoration: underline;
 }
 
 /********************************************************************* MENTIONS *********************************************************************/ 

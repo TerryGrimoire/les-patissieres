@@ -60,19 +60,17 @@ export default function Home({ helmet }) {
         <article>
           <h4>La passion de la pâtisserie</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde eius
-            eum amet molestias quisquam ipsa accusantium, quos optio quis nemo
-            ad quaerat. Quas, iure? Magni earum nobis debitis soluta doloremque
-            voluptate animi corrupti unde! Placeat quae harum dolorum?
-            Reiciendis non nihil ratione voluptatibus placeat deleniti
-            perspiciatis nemo eaque aliquid quam! Sunt ducimus dignissimos
-            eligendi cumque expedita cupiditate ratione aperiam fugit blanditiis
-            odit tenetur.
+            Il y a plus de 10 ans, deux pâtissières passionnées ont décidé
+            d'ouvrir une boutique dans l'optique de mêler à la fois les saveurs
+            péi et le savoir-faire pâtissier français. Nous cuisinons
+            exclusivement avec des ingrédients locaux et de saisons afin
+            d'offrir à notre clientèle un produit de qualité, fait maison avec
+            amour et tendresse.
           </p>
         </article>
-        <Link to="/Soutien">
+        <Link to="/Produits">
           <button type="button" className="button_style">
-            Nous soutenir
+            Découvrir les produits
           </button>
         </Link>
         <div className="custom-shape-divider-bottom-1671378180">
@@ -107,21 +105,22 @@ export default function Home({ helmet }) {
           alt="Deux pâtissières souriantes tenant des spécialités locales"
         />
         <article>
-          <h4>Merci à tous pour votre soutien</h4>
+          <h4>Merci pour votre soutien</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde eius
-            eum amet molestias quisquam ipsa accusantium, quos optio quis nemo
-            ad quaerat. Quas, iure? Magni earum nobis debitis soluta doloremque
-            voluptate animi corrupti unde! Placeat quae harum dolorum?
-            Reiciendis non nihil ratione voluptatibus placeat deleniti
-            perspiciatis nemo eaque aliquid quam! Sunt ducimus dignissimos
-            eligendi cumque expedita cupiditate ratione aperiam fugit blanditiis
-            odit tenetur.
+            Ces dernières années ont été difficiles pour nous, notamment à cause
+            de la pandémie COVID-19. Nous sommes passées très près de la
+            liquidation judiciaire, mais nous avons pu l'éviter grâce à vous.
+            Nous sommes éternellement reconnaissantes envers nos clients pour
+            leur mobilisatuib et leur soutien sans faille. Le combat continune
+            et nous espérons pouvoir compter une fois de plus sur votre aide. Le
+            soutien peut être financier mais il peut également prendre la forme
+            d'un like, d'un partage ou d'un avis sur les réseaux pour nous faire
+            gagner en visibilité.
           </p>
         </article>
         <Link to="/soutien">
           <button type="button" className="button_style">
-            Voir les formules
+            Nous soutenir
           </button>
           <div className="custom-shape-divider-bottom-1671377551">
             <svg
@@ -149,27 +148,25 @@ export default function Home({ helmet }) {
         </Link>
       </section>
       <section className="histoire">
-        <h3>Nos produits</h3>
+        <h3>Dernière chance</h3>
         <img
           src={soutien}
           alt="Deux pâtissières souriantes tenant des spécialités locales"
         />
         <article>
-          <h4>Produits locaux et de saisons</h4>
+          <h4>La décision judiciaire est tombée</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde eius
-            eum amet molestias quisquam ipsa accusantium, quos optio quis nemo
-            ad quaerat. Quas, iure? Magni earum nobis debitis soluta doloremque
-            voluptate animi corrupti unde! Placeat quae harum dolorum?
-            Reiciendis non nihil ratione voluptatibus placeat deleniti
-            perspiciatis nemo eaque aliquid quam! Sunt ducimus dignissimos
-            eligendi cumque expedita cupiditate ratione aperiam fugit blanditiis
-            odit tenetur.
+            Nous sommes actuellement à un tournant décisif pour notre petite
+            entreprise. Nous avons mis en place un système d'abonnement qui nous
+            permettra de montrer au juge que nous sommes en mesure de générer un
+            revenu régulier chaque mois. Plus de détails sont à venir sur le
+            fonctionnement de cet abonnement. Si vous souhaitez nous venir en
+            aide, n'hésitez pas à prendre contact avec nous.
           </p>
         </article>
-        <Link to="/Produits">
+        <Link to="/Contact">
           <button type="button" className="button_style">
-            Découvrir nos pâtisseries
+            Nous contacter
           </button>
         </Link>
         <div className="custom-shape-divider-bottom-1671378180">
