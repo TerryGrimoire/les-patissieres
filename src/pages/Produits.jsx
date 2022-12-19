@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import AliceCarousel from "react-alice-carousel";
 import papa from "papaparse";
@@ -181,6 +182,11 @@ function Produits({ helmet }) {
           }}
         />
 
+        <Link to="/contact">
+          <button type="button" className="button_style">
+            Réserver maintenant
+          </button>
+        </Link>
         <div className="custom-shape-divider-bottom-1671378180">
           <svg
             data-name="Layer 1"

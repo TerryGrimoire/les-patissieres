@@ -107,8 +107,24 @@ section {
   color: var(--dark-color);
   box-shadow: var(--box-shadow);
   margin: 1rem;
+  animation: pulse infinite 2s;
+}
+/** animation **/ 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  70% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
+/*** fin animation **/ 
 .margin1r0 {
   margin: 1rem 0;
 }
@@ -379,7 +395,6 @@ main, main * {
 
 .alice-carousel {
   position: relative;
-  margin-bottom: 8rem;
 }
 
 .produits img {
@@ -444,14 +459,82 @@ font-size: 1.2rem;
 }
 
 .produits_special h2, .produits h2 {
-  background-color: var(--dark-color);
+  background-color: var(--light-color);
+  color: var(--main-bg-color);
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
+.produits a {
+  display: flex;
+}
 
-/********************************************************************* Page 1 *********************************************************************/ 
+.produits button {
+  margin:1rem auto 8rem;
+}
+
+/********************************************************************* SOUTIEN *********************************************************************/ 
+.soutien_container {
+  position: relative;
+}
+.soutien_container h1 {
+  margin: 8rem 0 2rem;
+}
+
+.soutien_container p {
+  font-size: 1.2rem;
+  padding: 0 2rem;
+  color: var(--third-color);
+}
+
+.soutien_container a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--light-color);
+}
+.soutien_top {
+  position: relative;
+  padding: 0;
+}
+
+.soutien_main {
+  margin-bottom: 8rem;
+}
+.soutien_main h2 {
+  background-color: var(--light-color);
+  color: var(--main-bg-color);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.soutien_main div {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.soutien_main div * {
+  margin: 1rem 0;
+}
+.soutien_main h3 {
+  font-family: initial;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  letter-spacing: initial;
+  margin-bottom: 2rem;
+}
+
+.soutien_main img {
+  height: 40vh;
+  background-color: var(--third-color);
+  border-radius:30% 70% 55% 45% / 59% 35% 65% 41% ;
+}
+
 /********************************************************************* Page 1 *********************************************************************/ 
 
 

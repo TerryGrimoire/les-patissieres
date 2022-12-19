@@ -3,7 +3,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import Produits from "./pages/Produits";
-import Histoire from "./pages/Histoire";
+import Soutien from "./pages/Soutien";
 import Contact from "./pages/Contact";
 import Mentions from "./pages/Mentions";
 
@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home helmet={helmet} />} />
         <Route path="/Produits" element={<Produits helmet={helmet} />} />
-        <Route path="/Histoire" element={<Histoire helmet={helmet} />} />
+        <Route path="/Soutien" element={<Soutien helmet={helmet} />} />
         <Route path="/Contact" element={<Contact helmet={helmet} />} />
         <Route path="/Mentions" element={<Mentions />} />
       </Routes>
