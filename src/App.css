@@ -413,9 +413,9 @@ main, main * {
 
 .produits h2 {
   padding: 2rem;
-  font-family: var(--font-title);
-  font-size: 2rem;
+  margin: 2rem;
 }
+
 .produits_top {
   margin-top: -0.1rem;
   padding:2rem;
@@ -436,6 +436,18 @@ main, main * {
 
 .special_container h4 {
 font-size: 1.2rem;
+}
+
+.special_container p {
+  color: var(--third-color);
+  margin-top: 0.5rem;
+}
+
+.produits_special h2, .produits h2 {
+  background-color: var(--dark-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
 }
 
 

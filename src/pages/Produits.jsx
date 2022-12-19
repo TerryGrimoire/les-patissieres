@@ -125,21 +125,22 @@ function Produits({ helmet }) {
         </div>
         <h1>Notre carte</h1>
         <p>
-          Nos produits sont séléctionnés avec soin pour vous garantir des
-          pâtisseries de qualité.
+          Notre carte est régulièrement mise à jour car nos produits sont
+          séléctionnés avec soin pour vous garantir des pâtisseries et repas de
+          qualité.
         </p>
       </section>
 
       {special.length > 0 ? (
         <div className="produits_special">
-          <h2>En ce moment</h2>
+          <h2>À la carte en ce moment</h2>
           <div className="special_container">
             {special
               .filter((el) => parseInt(el.Date, 10) >= parseInt(today, 10))
               .map((el) => (
                 <div>
                   <div className="flex justify-between align-center">
-                    <h4>{el.Plat}</h4> <p>{el.Prix}</p>
+                    <h4>{el.Plat}</h4> <strong>{el.Prix}</strong>
                   </div>
                   <p>{el.Description}</p>
                 </div>
@@ -156,7 +157,7 @@ function Produits({ helmet }) {
       )}
 
       <section className="produits">
-        <h2>Découvrir la carte </h2>
+        <h2>La carte permanente </h2>
         <AliceCarousel
           mouseTracking
           disableDotsControls
