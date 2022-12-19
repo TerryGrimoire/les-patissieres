@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import Image from "../components/Home/LandingPage/Image";
 import histoire from "../assets/histoire.png";
 import soutien from "../assets/soutien.png";

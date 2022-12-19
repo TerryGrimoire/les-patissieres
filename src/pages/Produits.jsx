@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import AliceCarousel from "react-alice-carousel";
 import papa from "papaparse";
 import "react-alice-carousel/lib/alice-carousel.css";
@@ -139,7 +139,7 @@ function Produits({ helmet }) {
             {special
               .filter((el) => parseInt(el.Date, 10) >= parseInt(today, 10))
               .map((el) => (
-                <div>
+                <div key={el.Plat}>
                   <div className="flex justify-between align-center">
                     <h4>{el.Plat}</h4> <strong>{el.Prix}</strong>
                   </div>
