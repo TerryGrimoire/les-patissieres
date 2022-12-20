@@ -553,10 +553,20 @@ margin: 8rem 0 2rem;
 
 .contact_top div {
   padding: 2rem;
+  text-align: center;
 }
 
-.contact_top div * {
-  margin: 1rem 0;
+.contact_top p {
+  display: flex;
+  margin: 2rem 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact_top p img {
+  margin-right: 1rem;
+  overflow: visible;
+  height: 3rem;
 }
 
 .contact_top iframe {
@@ -565,7 +575,6 @@ margin: 8rem 0 2rem;
 }
 
 .contact_horaires {
-  margin: 0 0 2rem;
   padding: 3rem 2rem;
   width: 100%;
   display: flex;
@@ -595,6 +604,7 @@ margin: 8rem 0 2rem;
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  margin-top : -0.25rem
 }
 
 .contact_feries h2 {
@@ -611,10 +621,24 @@ margin: 8rem 0 2rem;
   text-align: center;
 }
 
-.contact_paiements  p {
+.contact_paiements  div {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
 
-  margin: 1rem 0;
+.contact_paiements {
+  margin-bottom: 10rem;
+}
 
+.contact_paiements img {
+  height: 15vw;
+  margin: 1rem 0.5rem;
+  background-color: var(--light-color);
+}
+
+.contact_paiements img.mc {
+  padding: 0.5rem;
 }
 
 .contact_bottom {
@@ -622,19 +646,20 @@ margin: 8rem 0 2rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem 2rem 8rem;
+  margin: 8rem 2rem 8rem;
 }
 
 .contact_bottom .ul {
   display: flex;
   margin: 2rem 0;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
 }
 
 .contact_bottom img {
-  width:40%;
+  margin-top: 3rem;
+  width:10vw;
 }
 
 

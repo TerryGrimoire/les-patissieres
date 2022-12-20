@@ -2,9 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import papa from "papaparse";
 
-import linkedin from "../assets/linkedin.svg";
-import instagram from "../assets/instagram.svg";
-import facebook from "../assets/facebook.svg";
+import email from "../assets/email.png";
+import adresse from "../assets/pin.png";
+import telephone from "../assets/telephone.png";
+import mastercard from "../assets/mastercard.png";
+import chequedej from "../assets/chequedej.png";
+import visa from "../assets/visa.png";
+import tickets from "../assets/tickets.png";
 
 function Contact({ helmet }) {
   useEffect(() => {
@@ -82,9 +86,17 @@ function Contact({ helmet }) {
         <div className="contact_top">
           <h1>Nous joindre</h1>
           <div>
-            <p>Par téléphone : {infos.Numéro}</p>
-            <p>Par Email : {infos.Email}</p>
-            <p>Nous retrouver : {infos.Adresse}</p>
+            <p>
+              <img src={telephone} alt="telephone pour contact" />{" "}
+              {infos.Numéro}
+            </p>
+            <p>
+              <img src={email} alt="enveloppe avec signe @" /> {infos.Email}
+            </p>
+            <p>
+              <img src={adresse} alt="pin de localisation sur une carte" />
+              {infos.Adresse}
+            </p>
           </div>
           <iframe src={infos.Maps} title="iframe google maps" />
         </div>
@@ -186,7 +198,7 @@ function Contact({ helmet }) {
         }
       </div>
 
-      <div className="contact_feries">
+      <div className="contact_feries light_bg">
         {infos.ouvert ? (
           <div>
             <h2> Jours fériés</h2>
@@ -211,43 +223,20 @@ function Contact({ helmet }) {
 
       <div className="contact_paiements">
         <h2>Paiement acceptés</h2>
-        {infos.Especes === "OUI" && <p>▫️ Espèces</p>}
-        {infos.Carte === "OUI" && <p>▫️ Carte Bancaire</p>}
-        {infos.Tickets === "OUI" && <p>▫️ Tickets restaurants</p>}
-        {infos.Cheque === "OUI" && <p>▫️ Cheque</p>}
+        <div>
+          {infos.Carte === "OUI" && <img src={visa} alt="paiement en carte" />}
+          {infos.Carte === "OUI" && (
+            <img src={mastercard} alt="paiement en carte" className="mc" />
+          )}
+          {infos.Tickets === "OUI" && (
+            <img src={tickets} alt="paiement en tickets" />
+          )}
+          {infos.Tickets === "OUI" && (
+            <img src={chequedej} alt="paiement en tickets" />
+          )}
+        </div>
       </div>
-      <div className="contact_bottom">
-        <h2>Retrouvez nous sur les réseaux sociaux</h2>
-        <ul className="ul">
-          <li>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/lespatissieres.re/?ref=page_internal"
-              rel="noreferrer"
-            >
-              <img src={facebook} alt="logo de Facebook" />
-            </a>
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/lespatissieres.reunion/"
-              rel="noreferrer"
-            >
-              <img src={instagram} alt="logo de Instagram" />
-            </a>
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/mamy-rabenjamina-82351714a/"
-              rel="noreferrer"
-            >
-              <img src={linkedin} alt="logo de Linkedin" />
-            </a>
-          </li>
-        </ul>
-      </div>
+
       <div className="custom-shape-divider-bottom-1671378180">
         <svg
           data-name="Layer 1"
