@@ -523,8 +523,6 @@ font-size: 1.2rem;
 .soutien_main h3 {
   font-family: initial;
   font-size: 1.5rem;
-  text-decoration: underline;
-  text-underline-offset: 3px;
   letter-spacing: initial;
   margin-bottom: 2rem;
 }
