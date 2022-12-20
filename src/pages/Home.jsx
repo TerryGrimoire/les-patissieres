@@ -30,7 +30,7 @@ export default function Home({ helmet }) {
       <Image title={helmet.title} />
 
       <section className="histoire">
-        <div className="custom-shape-divider-top-1671378446">
+        <div className="custom-shape-divider-top-1671378446 mobile">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -54,21 +54,30 @@ export default function Home({ helmet }) {
           </svg>
         </div>
         <h3>Notre histoire</h3>
-        <img
-          src={histoire}
-          alt="Deux pâtissières souriantes tenant des spécialités locales"
-        />
-        <article>
-          <h4>La passion de la pâtisserie</h4>
-          <p>
-            Il y a plus de 10 ans, deux pâtissières passionnées ont décidé
-            d'ouvrir une boutique dans l'optique de mêler à la fois les saveurs
-            péi et le savoir-faire pâtissier français. Nous cuisinons
-            exclusivement avec des ingrédients locaux et de saisons afin
-            d'offrir à notre clientèle un produit de qualité, fait maison avec
-            amour et tendresse.
-          </p>
-        </article>
+        <div>
+          <img
+            src={histoire}
+            alt="Deux pâtissières souriantes tenant des spécialités locales"
+          />
+          <article>
+            <h4>La passion de la pâtisserie</h4>
+            <p>
+              Il y a plus de 10 ans, deux pâtissières passionnées ont décidé
+              d'ouvrir une boutique dans l'optique de mêler à la fois les
+              saveurs péi et le savoir-faire pâtissier français. Nous cuisinons
+              exclusivement avec des ingrédients locaux et de saisons afin
+              d'offrir à notre clientèle un produit de qualité, fait maison avec
+              amour et tendresse.
+            </p>
+            <p>
+              Nous avons décliné pour vous les saveurs péi en version salée et
+              sucrée. Pâtisserie française créolisée, restauration du midi
+              végétarienne aux épices et aromates locaux. Nos pâtisseries
+              sucrées et salées sont des créations originales. Nous vous
+              invitons à les découvrir dans notre atelier du Bas de la Rivière.
+            </p>
+          </article>
+        </div>
         <Link to="/Produits">
           <button type="button" className="button_style">
             Découvrir les produits
@@ -99,26 +108,33 @@ export default function Home({ helmet }) {
         </div>
       </section>
 
-      <section className="histoire light">
+      <section className="histoire light soutien_home">
         <h3>Votre soutien</h3>
-        <img
-          src={soutien}
-          alt="Deux pâtissières souriantes tenant des spécialités locales"
-        />
-        <article>
-          <h4>Merci pour votre soutien</h4>
-          <p>
-            Ces dernières années ont été difficiles pour nous, notamment à cause
-            de la pandémie COVID-19. Nous sommes passées très près de la
-            liquidation judiciaire, mais nous avons pu l'éviter grâce à vous.
-            Nous sommes éternellement reconnaissantes envers nos clients pour
-            leur mobilisatuib et leur soutien sans faille. Le combat continune
-            et nous espérons pouvoir compter une fois de plus sur votre aide. Le
-            soutien peut être financier mais il peut également prendre la forme
-            d'un like, d'un partage ou d'un avis sur les réseaux pour nous faire
-            gagner en visibilité.
-          </p>
-        </article>
+        <div>
+          <img
+            src={soutien}
+            alt="Deux pâtissières souriantes tenant des spécialités locales"
+          />
+          <article>
+            <h4>Merci pour votre soutien</h4>
+            <p>
+              Ces dernières années ont été difficiles pour nous, notamment à
+              cause de la pandémie COVID-19. Nous sommes passées très près de la
+              liquidation judiciaire, mais nous avons pu l'éviter grâce à vous.
+              Nous sommes éternellement reconnaissantes envers nos clients pour
+              leur mobilisation et leur soutien sans faille. C'est avec une
+              détermination encore plus forte que nous allons continuer cette
+              belle aventure.
+            </p>
+            <p>
+              Le combat continune et nous espérons pouvoir compter une fois de
+              plus sur votre aide. Le soutien peut être financier mais il peut
+              également prendre la forme d'un like, d'un partage ou d'un avis
+              sur les réseaux pour nous faire gagner en visibilité.
+            </p>
+          </article>
+        </div>
+
         <Link to="/soutien">
           <button type="button" className="button_style">
             Nous soutenir
@@ -148,23 +164,31 @@ export default function Home({ helmet }) {
           </div>
         </Link>
       </section>
-      <section className="histoire">
+      <section className="histoire chance_home">
         <h3>Dernière chance</h3>
-        <img
-          src={contact}
-          alt="Deux pâtissières souriantes tenant des spécialités locales"
-        />
-        <article>
-          <h4>La décision judiciaire est tombée</h4>
-          <p>
-            Nous sommes actuellement à un tournant décisif pour notre petite
-            entreprise. Nous avons mis en place un système d'abonnement qui nous
-            permettra de montrer au juge que nous sommes en mesure de générer un
-            revenu régulier chaque mois. Plus de détails sont à venir sur le
-            fonctionnement de cet abonnement. Si vous souhaitez nous venir en
-            aide, n'hésitez pas à prendre contact avec nous.
-          </p>
-        </article>
+
+        <div>
+          <img
+            src={contact}
+            alt="Deux pâtissières souriantes tenant des spécialités locales"
+          />
+          <article>
+            <h4>La décision judiciaire est tombée</h4>
+            <p>
+              Nous sommes actuellement à un tournant décisif pour notre petite
+              entreprise. Nous avons mis en place un système d'abonnement qui
+              nous permettra de montrer au juge que nous sommes en mesure de
+              générer un revenu régulier chaque mois. Plus de détails sont à
+              venir sur le fonctionnement de cet abonnement. Si vous souhaitez
+              vous abonner, n'hésitez pas à prendre contact avec nous.
+            </p>
+            <p>
+              Tout abonnement ou commande doit se faire par email ou téléphone.
+              Vous pouvez également nous contacter sur nos réseaux sociaux.
+            </p>
+          </article>
+        </div>
+
         <Link to="/Contact">
           <button type="button" className="button_style">
             Nous contacter

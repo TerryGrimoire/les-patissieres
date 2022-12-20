@@ -1,5 +1,6 @@
 /********************************************************************* CSS VARIABLES *********************************************************************/ 
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 :root {
 
   --main-bg-color : #D0307D;
@@ -9,7 +10,7 @@
   --third-color: #d9d9d9;
   --box-shadow: #e1e1e1 0px 1px 0px, #e1e1e1 0px 1px 2px, #e1e1e1 0px 2px 4px;
   --font-title :  'Great Vibes', cursive;
-  --font-text :'Josefin Sans', sans-serif;
+  --font-text :'Roboto', sans-serif;
 }
 
 
@@ -294,6 +295,10 @@ main, main * {
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
+  }
+
+  .histoire article p {
+    margin: 1rem 0;
   }
 .histoire h4 {
   margin: 1rem 0;
@@ -749,12 +754,248 @@ margin: 8rem 0 2rem;
 
 /********************************************************************* NAVBAR *********************************************************************/ 
 .navbar {
-  padding: 2rem 0;
-
+  padding: 0;
 }
 
 .navbar * {
   padding: 0rem 2rem;
 }
-  
+
+.navbar *:hover {
+  transition: 0.3s linear all;
+  color: var(--main-bg-color);
+  font-weight: bolder ;
+}
+
+/********************************************************************* HOME *********************************************************************/ 
+
+.main_container {
+  padding: 1rem 3rem;
+}
+
+main {
+  margin: 0;
+  border: none;
+}
+main, main * {
+  overflow: hidden;
+}
+/************* LANDING IMAGE *************/
+.landing_page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin: 0;
+  background-color: var(--dark-color);
+  position: relative;
+  padding: 0;
+}
+
+.landing_page, .landing_page * {
+  overflow: hidden;
+}
+.landing_page h1 {
+  font-size: 8rem;
+  text-align: center;
+}
+
+.landing_page h2 {
+  font-size: 1.5rem;
+}
+.landing_page h1, .landing_page h2 {
+  background-color: transparent;
+  padding: 0.5rem 2rem;
+  z-index: 1;
+  margin: 0;
+  color: var(--light-color);
+  text-align: center;
+}
+
+  .background_img {
+    position: absolute;
+    background-position: 50%;
+    min-width: 100vw;
+    max-height: 130%;
+  }
+
+  .veil {
+    position: absolute;
+    background-color: var(--secondary-bg-color);
+    width: 100%;
+    height: 100%;
+    opacity: 60%;
+  }
+
+
+  /***************** HISTOIRE *****************/
+
+  .histoire {
+    margin: 0 0 -0.5rem;
+    padding: 5rem 10rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .histoire div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    height: fit-content;
+  }
+
+  .histoire h3 {
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .histoire img {
+    min-width: 35vw;
+    padding: 1rem;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    box-shadow: var(--box-shadow);
+    margin: 1rem;
+  }
+
+  .histoire article {
+    padding: 0 3rem;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+.histoire h4 {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+
+.histoire button {
+  margin-bottom: 6rem;
+}
+/********************************* NOTRE HISTOIRE SHAPES TOP ********************************/
+
+
+.custom-shape-divider-top-1671378446 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1671378446 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+}
+
+.custom-shape-divider-top-1671378446 .shape-fill {
+  fill: var(--light-color);
+}
+/********************************* NOTRE HISTOIRE SHAPES BOTTOM ********************************/
+.custom-shape-divider-bottom-1671378180 {
+  position: absolute;
+  bottom: 0rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1671378180 svg {
+  position: relative;
+  display: block;
+  width: calc(115% + 1.3px);
+  height: 104px;
+}
+
+.custom-shape-divider-bottom-1671378180 .shape-fill {
+  fill: #F1F1F1;
+}
+
+
+/********************************  AUTRE SHAPES  ********************************/
+
+.custom-shape-divider-bottom-1671377551 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1671377551 svg {
+  position: relative;
+  display: block;
+  width: calc(115% + 1.3px);
+  height: 104px;
+}
+
+.custom-shape-divider-bottom-1671377551 .shape-fill {
+  fill: #D0307D;
+}
+/*****  SOUTIEN *****/
+
+.soutien_home {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.soutien_home img {
+  width: 30vw ;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.soutien_home div {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  margin: 0;
+  overflow: hidden;
+}
+
+.soutien_home button {
+  margin-bottom: 10rem;
+}
+
+.soutien_home a {
+  height: fit-content;
+}
+
+/******* Chances ****************/
+
+.chance_home div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+/******************************** FIN *******************************/
+.mobile, .mobile * {
+  display: none;
+}
+
+.desktop, .desktop * {
+  display: initial;
+}
 }
