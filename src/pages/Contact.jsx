@@ -108,119 +108,119 @@ function Contact({ helmet }) {
           />
         </div>
       )}
+      <section className="horaires_joursferies light_bg">
+        <div className="contact_horaires light_bg">
+          <h2>Nos horaires</h2>
+          {
+            /* Si l'entreprise ne ferme pas le midi */
+            infos.Lundi20 === "" && <div>Ne ferme pas le midi</div>
+          }
 
-      <div className="contact_horaires light_bg">
-        <h2>Nos horaires</h2>
-        {
-          /* Si l'entreprise ne ferme pas le midi */
-          infos.Lundi20 === "" && <div>Ne ferme pas le midi</div>
-        }
+          {
+            /* Si l'entreprise ferme le midi  */
+            infos.Lundi20 !== "" && (
+              <div>
+                <div>
+                  Lundi :{" "}
+                  {infos.LundiO === "Fermé" && infos.Lundi2O === "Fermé"
+                    ? infos.LundiO
+                    : `${infos.LundiO} - ${infos.LundiF} | ${
+                        infos.Lundi2O === "Fermé" && infos.Lundi2F === "Fermé"
+                          ? "Fermé"
+                          : `${infos.Lundi2O} - ${infos.Lundi2F}`
+                      }`}
+                </div>
+                <div>
+                  Mardi :{" "}
+                  {infos.MardiO === "Fermé" && infos.Mardi2O === "Fermé"
+                    ? infos.MardiO
+                    : `${infos.MardiO} - ${infos.MardiF} | ${
+                        infos.Mardi2O === "Fermé" && infos.Mardi2F === "Fermé"
+                          ? "Fermé"
+                          : `${infos.Mardi2O} - ${infos.Mardi2F}`
+                      }`}
+                </div>
+                <div>
+                  Mercredi :{" "}
+                  {infos.MercrediO === "Fermé" && infos.Mercredi2O === "Fermé"
+                    ? infos.MercrediO
+                    : `${infos.MercrediO} - ${infos.MercrediF} | ${
+                        infos.Mercredi2O === "Fermé" &&
+                        infos.Mercredi2F === "Fermé"
+                          ? "Fermé"
+                          : `${infos.Mercredi2O} - ${infos.Mercredi2F}`
+                      }`}
+                </div>
+                <div>
+                  Jeudi :{" "}
+                  {infos.JeudiO === "Fermé" && infos.Jeudi2O === "Fermé"
+                    ? infos.JeudiO
+                    : `${infos.JeudiO} - ${infos.JeudiF} | ${
+                        infos.Jeudi2O === "Fermé" && infos.Jeudi2F === "Fermé"
+                          ? "Fermé"
+                          : `${infos.Jeudi2O} - ${infos.Jeudi2F}`
+                      }`}
+                </div>
+                <div>
+                  Vendredi :{" "}
+                  {infos.VendrediO === "Fermé" && infos.Vendredi2O === "Fermé"
+                    ? infos.VendrediO
+                    : `${infos.VendrediO} - ${infos.VendrediF} | ${
+                        infos.Vendredi2O === "Fermé" &&
+                        infos.Vendredi2F === "Fermé"
+                          ? "Fermé"
+                          : `${infos.Vendredi2O} - ${infos.Vendredi2F}`
+                      }`}
+                </div>
+                <div>
+                  Samedi :{" "}
+                  {infos.SamediO === "Fermé" && infos.Samedi2O === "Fermé"
+                    ? infos.SamediO
+                    : `${infos.SamediO} - ${infos.SamediF} | ${
+                        infos.Samedi2O === "Fermé" && infos.Samedi2F === "Fermé"
+                          ? "Fermé"
+                          : `${infos.Samedi2O} - ${infos.Samedi2F}`
+                      }`}
+                </div>
+                <div>
+                  Dimanche :{" "}
+                  {infos.DimancheO === "Fermé" && infos.Dimanche2O === "Fermé"
+                    ? infos.DimancheO
+                    : `${infos.DimancheO} - ${infos.DimancheF} | ${
+                        infos.Dimanche2O === "Fermé" &&
+                        infos.Dimanche2F === "Fermé"
+                          ? "Fermé"
+                          : `${infos.Dimanche2O} - ${infos.Dimanche2F}`
+                      }`}
+                </div>
+              </div>
+            )
+          }
+        </div>
 
-        {
-          /* Si l'entreprise ferme le midi  */
-          infos.Lundi20 !== "" && (
+        <div className="contact_feries light_bg">
+          {infos.ouvert ? (
             <div>
-              <div>
-                Lundi :{" "}
-                {infos.LundiO === "Fermé" && infos.Lundi2O === "Fermé"
-                  ? infos.LundiO
-                  : `${infos.LundiO} - ${infos.LundiF} | ${
-                      infos.Lundi2O === "Fermé" && infos.Lundi2F === "Fermé"
-                        ? "Fermé"
-                        : `${infos.Lundi2O} - ${infos.Lundi2F}`
-                    }`}
-              </div>
-              <div>
-                Mardi :{" "}
-                {infos.MardiO === "Fermé" && infos.Mardi2O === "Fermé"
-                  ? infos.MardiO
-                  : `${infos.MardiO} - ${infos.MardiF} | ${
-                      infos.Mardi2O === "Fermé" && infos.Mardi2F === "Fermé"
-                        ? "Fermé"
-                        : `${infos.Mardi2O} - ${infos.Mardi2F}`
-                    }`}
-              </div>
-              <div>
-                Mercredi :{" "}
-                {infos.MercrediO === "Fermé" && infos.Mercredi2O === "Fermé"
-                  ? infos.MercrediO
-                  : `${infos.MercrediO} - ${infos.MercrediF} | ${
-                      infos.Mercredi2O === "Fermé" &&
-                      infos.Mercredi2F === "Fermé"
-                        ? "Fermé"
-                        : `${infos.Mercredi2O} - ${infos.Mercredi2F}`
-                    }`}
-              </div>
-              <div>
-                Jeudi :{" "}
-                {infos.JeudiO === "Fermé" && infos.Jeudi2O === "Fermé"
-                  ? infos.JeudiO
-                  : `${infos.JeudiO} - ${infos.JeudiF} | ${
-                      infos.Jeudi2O === "Fermé" && infos.Jeudi2F === "Fermé"
-                        ? "Fermé"
-                        : `${infos.Jeudi2O} - ${infos.Jeudi2F}`
-                    }`}
-              </div>
-              <div>
-                Vendredi :{" "}
-                {infos.VendrediO === "Fermé" && infos.Vendredi2O === "Fermé"
-                  ? infos.VendrediO
-                  : `${infos.VendrediO} - ${infos.VendrediF} | ${
-                      infos.Vendredi2O === "Fermé" &&
-                      infos.Vendredi2F === "Fermé"
-                        ? "Fermé"
-                        : `${infos.Vendredi2O} - ${infos.Vendredi2F}`
-                    }`}
-              </div>
-              <div>
-                Samedi :{" "}
-                {infos.SamediO === "Fermé" && infos.Samedi2O === "Fermé"
-                  ? infos.SamediO
-                  : `${infos.SamediO} - ${infos.SamediF} | ${
-                      infos.Samedi2O === "Fermé" && infos.Samedi2F === "Fermé"
-                        ? "Fermé"
-                        : `${infos.Samedi2O} - ${infos.Samedi2F}`
-                    }`}
-              </div>
-              <div>
-                Dimanche :{" "}
-                {infos.DimancheO === "Fermé" && infos.Dimanche2O === "Fermé"
-                  ? infos.DimancheO
-                  : `${infos.DimancheO} - ${infos.DimancheF} | ${
-                      infos.Dimanche2O === "Fermé" &&
-                      infos.Dimanche2F === "Fermé"
-                        ? "Fermé"
-                        : `${infos.Dimanche2O} - ${infos.Dimanche2F}`
-                    }`}
-              </div>
+              <h2> Jours fériés</h2>
+
+              <p>
+                Nous sommes fermés les jours fériés à l'exception des jours
+                suivants :{" "}
+              </p>
+
+              <ul>
+                {Object.keys(infos.ouvert).map((el) => (
+                  <p className="contact_li" key={el}>
+                    ▫️ {el}
+                  </p>
+                ))}
+              </ul>
             </div>
-          )
-        }
-      </div>
-
-      <div className="contact_feries light_bg">
-        {infos.ouvert ? (
-          <div>
-            <h2> Jours fériés</h2>
-
-            <p>
-              Nous sommes fermés les jours fériés à l'exception des jours
-              suivants :{" "}
-            </p>
-
-            <ul>
-              {Object.keys(infos.ouvert).map((el) => (
-                <p className="contact_li" key={el}>
-                  ▫️ {el}
-                </p>
-              ))}
-            </ul>
-          </div>
-        ) : (
-          <p>Nous sommes fermés les jours fériés</p>
-        )}
-      </div>
-
+          ) : (
+            <p>Nous sommes fermés les jours fériés</p>
+          )}
+        </div>
+      </section>
       <div className="contact_paiements">
         <h2>Paiement acceptés</h2>
         <div>

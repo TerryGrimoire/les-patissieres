@@ -59,7 +59,7 @@ function Soutien({ helmet }) {
         </section>
         <section className="soutien_main">
           <article>
-            <h2>Soutien financier</h2>
+            <h2>SOUTIEN FINANCIER</h2>
             <div>
               <h3>Faire un don</h3>
               <img className="img_don" src={don} alt="gif montrant un don" />
@@ -81,16 +81,16 @@ function Soutien({ helmet }) {
 
               <p>
                 Afin de pouvoir prouver aux juges que nous pouvons assurer une
-                trésorerie régulière et ainsi espérer surmonter cette crise,
-                nous avons mis en place un système d'abonnement. Elle se décline
-                actuellement en 3 abonnements mensuels de 15€, 30€ et 45€. Plus
-                de détails très prochainement concernant l'offre complète.
+                trésorerie régulière, nous avons mis en place un système
+                d'abonnement. Ce sont donc 3 abonnements mensuels de 15€, 30€ et
+                45€. Plus de détails très prochainement concernant l'offre
+                complète.
               </p>
             </div>
           </article>
 
           <article>
-            <h2>Soutien médiathique</h2>
+            <h2>SOUTIEN MÉDIATHIQUE</h2>
             <div>
               <h3>Laisser un avis sur Google </h3>
               <img

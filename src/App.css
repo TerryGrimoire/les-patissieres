@@ -989,8 +989,383 @@ main, main * {
   overflow: hidden;
 }
 
+/********************************************************************* Produits *********************************************************************/ 
+
+.loading img {
+  width: 10%;
+}
+
+.produits img {
+  width: 100%;
+}
+
+.produits .arrow {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 35%;
+  background-color: transparent;
+  opacity: 40%;
+
+}
+
+.produits .arrow img {
+  width: 2rem;
+  background-color: inherit;
+}
+
+.left {
+  transform: rotate(90deg);
+  left: 0;
+}
+
+.right {
+  transform: rotate(270deg);
+  right: 0;
+}
+
+.produits h2 {
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.produits_top {
+  margin-top: -0.1rem;
+  padding:2rem;
+  position: relative;
+}
+
+.produits_top h1 {
+  margin-top: 5rem;
+}
+
+.produits_top p {
+  text-align: center;
+  margin: 2rem 0;
+}
+.produits_special {
+  padding: 2rem 15rem;
+}
+
+.special_container > div {
+  margin: 2rem 0;
+}
+
+.special_container h4 {
+font-size: 1.2rem;
+}
+
+.special_container p {
+  color: var(--third-color);
+  margin-top: 0.5rem;
+  padding-right:4rem;
+}
+
+.produits_special h2, .produits h2 {
+  background-color: var(--light-color);
+  color: var(--main-bg-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.produits h2 {
+  margin: 2rem 15rem;
+}
+
+.produits a {
+  display: flex;
+}
+
+.produits button {
+  margin:1rem auto 8rem;
+}
+
+
+/********************************************************************* SOUTIEN *********************************************************************/ 
+.soutien_container {
+  position: relative;
+}
+.soutien_container h1 {
+  margin: 8rem 0 2rem;
+}
+
+.soutien_container p {
+  font-size: 1.2rem;
+  color: var(--third-color);
+}
+
+.soutien_container a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--light-color);
+}
+.soutien_top {
+  position: relative;
+  padding: 0 15rem;
+}
+
+.soutien_main {
+  margin-bottom: 8rem;
+  padding: 5rem 15rem;
+}
+
+.soutien_main h2 {
+  background-color: var(--light-color);
+  color: var(--main-bg-color);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 4rem;
+  writing-mode: vertical-rl;
+  text-orientation: revert;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.soutien_main article {
+  display: flex;
+}
+
+.soutien_main div {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width:40vw;
+}
+
+.soutien_main div * {
+  margin: 1rem 0;
+}
+.soutien_main h3 {
+  font-family: initial;
+  font-size: 1.5rem;
+  letter-spacing: initial;
+  margin-bottom: 2rem;
+}
+
+.soutien_main img {
+  height: 40vh;
+  background-color: var(--third-color);
+  border-radius:30% 70% 55% 45% / 59% 35% 65% 41% ;
+}
+/********************************************************************* CONTACT *********************************************************************/ 
+
+.contact_main_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.contact_main_container p {
+  font-size: 1.2rem;
+}
+
+.contact_main_container .loading {
+  margin-top: 8rem;
+}
+
+.contact_top div {
+  padding: 0 20rem;
+  text-align: center;
+}
+
+.contact_top p {
+  display: flex;
+  margin: 2rem 0;
+  padding: 0 15rem;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+
+.contact_top p img {
+  margin-right: 1rem;
+  overflow: visible;
+  height: 2rem;
+}
+
+.contact_top iframe {
+  width: 100vw;
+  height: 70vh;
+}
+
+.horaires_joursferies {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 2rem 20rem;
+}
+
+.contact_horaires {
+  padding:2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.light_bg, .light_bg * {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.contact_horaires h2 {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.contact_horaires div {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+.contact_feries {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-top : -0.25rem
+}
+
+.contact_feries h2 {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.contact_feries p {
+  margin-bottom: 1rem;
+}
+.contact_paiements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 2rem;
+}
+.contact_paiements h2 {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.contact_paiements  div {
+ display: flex;
+ justify-content: space-around;
+ align-items: flex-end;
+}
+
+.contact_paiements {
+  margin-bottom: 10rem;
+}
+
+.contact_paiements img {
+  height: 3.5vw;
+  margin: 1rem 0.5rem;
+  background-color: var(--light-color);
+}
+
+.contact_paiements img.mc {
+  padding: 0.5rem;
+}
+
+.contact_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem 2rem 8rem;
+}
+
+.contact_bottom .ul {
+  display: flex;
+  margin: 2rem 0;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.contact_bottom img {
+  margin-top: 3rem;
+  width:10vw;
+}
+
+/********************************************************************* FOOTER *********************************************************************/ 
+
+.footer {
+  padding: 1rem 2rem;
+  align-items: flex-start;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer * {
+  padding: 0.5rem 0;
+  background-color: inherit;
+  color: inherit;
+  overflow: hidden;
+}
+
+.footer > * {
+  margin: 1rem;
+}
+
+.footer li, .footer a, .footer div {
+  padding: 0.15rem 0;
+}
+.footer-section {
+  width: 100%;
+}
+
+.footer_contact ul {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer img {
+  width: 2rem;
+  margin: 0 0.25rem;
+}
+
+.footer_bottom {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.terry img {
+  width: 10vw;
+}
+
+.mentions_obligatoires {
+  line-height: 1.5;
+}
+
+.mentions_obligatoires a {
+  text-decoration: underline;
+}
 
 /******************************** FIN *******************************/
+
+
 .mobile, .mobile * {
   display: none;
 }
