@@ -540,6 +540,7 @@ font-size: 1.2rem;
   font-size: 1.5rem;
   letter-spacing: initial;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .soutien_main img {
@@ -799,7 +800,7 @@ main, main * {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
   margin: 0;
   background-color: var(--dark-color);
   position: relative;
@@ -828,9 +829,9 @@ main, main * {
 
   .background_img {
     position: absolute;
-    background-position: 50%;
+    top: -5rem;
     min-width: 100vw;
-    max-height: 130%;
+    max-height: fit-content;
   }
 
   .veil {
@@ -1172,6 +1173,7 @@ align-items: center;
   font-size: 1.5rem;
   letter-spacing: initial;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .soutien_main img {
