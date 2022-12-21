@@ -6,6 +6,8 @@ import don from "../assets/don.webp";
 import reseaux from "../assets/reseaux.webp";
 import review from "../assets/review.webp";
 import abonnement from "../assets/abonnement.webp";
+import local from "../assets/local.gif";
+import gossip from "../assets/gossip.gif";
 
 function Soutien({ helmet }) {
   useEffect(() => {
@@ -87,6 +89,22 @@ function Soutien({ helmet }) {
                 complète.
               </p>
             </div>
+            <div>
+              <h3>Commander pour vos fêtes</h3>
+              <img
+                className="img:_don"
+                src={local}
+                alt="gif montrant un abonnement"
+              />
+
+              <p>
+                Favoriser une artisante pâtissière locale plutôt que la grande
+                distribution, c'est non seulement un geste qui peut sauver une
+                entreprise mais c'est aussi et surtout un geste solidaire. En
+                consommant local, on contribue aussi à mettre en l'air La
+                Réunion et ses nombreux talents.
+              </p>
+            </div>
           </article>
 
           <article>
@@ -151,6 +169,20 @@ function Soutien({ helmet }) {
                 </a>
                 . Chaque mention j'aime et follower nous permet de gagner en
                 visibilité et nous rapproche un peu plus de la rentabilité.
+              </p>
+            </div>
+            <div className="img_gossip">
+              <h3>Parler de nous autour de vous</h3>
+              <img
+                src={gossip}
+                alt="gif montrant un téléphone sur les réseaux sociaux avec plein de mentions j'aime"
+              />
+
+              <p>
+                Enfin, parce que le bouche à oreille est un outil puissant. Vous
+                pouvez tout simplement parler de nous à votre entourage, au
+                bureau ou dans votre famille, pour nous aider à nous faire
+                connaître davantage.
               </p>
             </div>
           </article>

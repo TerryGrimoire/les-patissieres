@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet-async";
 import Image from "../components/Home/LandingPage/Image";
 import histoire from "../assets/histoire.png";
 import soutien from "../assets/soutien.png";
-import contact from "../assets/contact.png";
 
 export default function Home({ helmet }) {
   useEffect(() => {
@@ -62,25 +61,30 @@ export default function Home({ helmet }) {
           <article>
             <h4>La passion de la pâtisserie</h4>
             <p>
-              Il y a plus de 10 ans, deux pâtissières passionnées ont décidé
-              d'ouvrir une boutique dans l'optique de mêler à la fois les
-              saveurs péi et le savoir-faire pâtissier français. Nous cuisinons
-              exclusivement avec des ingrédients locaux et de saisons afin
-              d'offrir à notre clientèle un produit de qualité, fait maison avec
-              amour et tendresse.
+              Créée en 2012 par deux entrepreneuses passionnées, Les Pâtissières
+              ont remporté de nombreux prix et distinctions grâce à leurs
+              créations originales mêlant savoir-faire français et saveurs
+              locales réunionnaises.
             </p>
             <p>
-              Nous avons décliné pour vous les saveurs péi en version salée et
-              sucrée. Pâtisserie française créolisée, restauration du midi
-              végétarienne aux épices et aromates locaux. Nos pâtisseries
-              sucrées et salées sont des créations originales. Nous vous
-              invitons à les découvrir dans notre atelier du Bas de la Rivière.
+              La pandémie COVID-19 et le départ de son associée pour raisons
+              médicales ont laissés Mamy, la gérante de la pâtisserie, en grande
+              difficulté, frôlant de justesse la liquidation judiciaire. Mais sa
+              détermination est sans faille et elle souhaite prouver que lorsque
+              l'on fait les choses avec amour et passion, tout est possible et
+              réalisable.
+            </p>
+
+            <p>
+              Venez découvrir nos saveurs péi en version sucrée ou salée ainsi
+              que nos plats végétariens aux épices et aromates locaux dans notre
+              atelier du Bas de la Rivière.
             </p>
           </article>
         </div>
         <Link to="/Produits">
           <button type="button" className="button_style">
-            Découvrir les produits
+            Découvrir la carte
           </button>
         </Link>
         <div className="custom-shape-divider-bottom-1671378180">
@@ -118,26 +122,24 @@ export default function Home({ helmet }) {
           <article>
             <h4>Merci pour votre soutien</h4>
             <p>
-              Ces dernières années ont été difficiles pour nous, notamment à
-              cause de la pandémie COVID-19. Nous sommes passées très près de la
-              liquidation judiciaire, mais nous avons pu l'éviter grâce à vous.
-              Nous sommes éternellement reconnaissantes envers nos clients pour
-              leur mobilisation et leur soutien sans faille. C'est avec une
-              détermination encore plus forte que nous allons continuer cette
-              belle aventure.
+              Ces dernières années ont été difficiles pour nous, mais nous
+              sommes toujours présentes et c'est entièrement grâce à vous. Nous
+              sommes éternellement reconnaissantes envers nos clients pour leur
+              mobilisation et leur soutien. C'est avec vous et pour vous que
+              nous souhaitons continuer cette belle aventure.
             </p>
             <p>
-              Le combat continune et nous espérons pouvoir compter une fois de
-              plus sur votre aide. Le soutien peut être financier mais il peut
-              également prendre la forme d'un like, d'un partage ou d'un avis
-              sur les réseaux pour nous faire gagner en visibilité.
+              Le combat n'est pas fini et nous avons encore besoin de votre
+              aide. Vous pouvez contribuer de votre côté (avec ou sans argent)
+              et nous aider à remonter la pente. Cela peut se faire via un like,
+              un partage ou en parlant de nous à votre entourage.
             </p>
           </article>
         </div>
 
         <Link to="/soutien">
           <button type="button" className="button_style">
-            Nous soutenir
+            Soutenir Mamy ♥
           </button>
           <div className="custom-shape-divider-bottom-1671377551">
             <svg
@@ -168,9 +170,11 @@ export default function Home({ helmet }) {
         <h3>Dernière chance</h3>
 
         <div>
-          <img
-            src={contact}
-            alt="Deux pâtissières souriantes tenant des spécialités locales"
+          <iframe
+            src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freunionla1ere%2Fvideos%2F474901498102657%2F&show_text=false&width=560&t=0"
+            allowFullScreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            title="patissieres"
           />
           <article>
             <h4>La décision judiciaire est tombée</h4>
