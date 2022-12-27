@@ -63,13 +63,14 @@ function Soutien({ helmet }) {
           <article>
             <h2>SOUTIEN FINANCIER</h2>
             <div>
-              <h3>Faire un don</h3>
+              <h3>Devenir actionnaire</h3>
               <img className="img_don" src={don} alt="gif montrant un don" />
               <p>
-                Une de vos options pour nous soutenir et nous aider à traverser
-                cette crise est par l'intermédiaire d'un don. Ayant besoin
-                actuellement de renflouer notre trésorerie, chaque centime a son
-                importance dans notre situation actuelle.
+                Devenez co-propriétaire des Pâtissières. Nous ouvrirons
+                prochainement le capital social des Pâtissières. Le modèle
+                actuel n'est pas viable et doit être repensé. Je cherche donc
+                les co-construteurs des Pâtissières du futur, qui voudraient
+                s'engager en argent, en idées, en logistique, etc.
               </p>
             </div>
 

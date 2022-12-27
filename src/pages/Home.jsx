@@ -1,14 +1,48 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 import Image from "../components/Home/LandingPage/Image";
 import histoire from "../assets/histoire.png";
 import soutien from "../assets/soutien.png";
+import soutien2 from "../assets/soutien2.png";
+import soutien3 from "../assets/soutien3.png";
+import soutien4 from "../assets/soutien4.png";
 
 export default function Home({ helmet }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const handleDragStart = (e) => e.preventDefault();
+
+  const items = [
+    <img
+      src={soutien}
+      onDragStart={handleDragStart}
+      alt="dessert des pâtissières"
+      className="soutien_home_img"
+    />,
+    <img
+      src={soutien2}
+      onDragStart={handleDragStart}
+      alt="dessert des pâtissières"
+      className="soutien_home_img"
+    />,
+    <img
+      src={soutien3}
+      onDragStart={handleDragStart}
+      alt="dessert des pâtissières"
+      className="soutien_home_img"
+    />,
+    <img
+      src={soutien4}
+      onDragStart={handleDragStart}
+      alt="dessert des pâtissières"
+      className="soutien_home_img"
+    />,
+  ];
   return (
     <main className="flex-col">
       <Helmet>
@@ -115,10 +149,18 @@ export default function Home({ helmet }) {
       <section className="histoire light soutien_home">
         <h3>Votre soutien</h3>
         <div>
-          <img
-            src={soutien}
-            alt="Deux pâtissières souriantes tenant des spécialités locales"
-          />
+          <div className="carou">
+            <AliceCarousel
+              mouseTracking
+              items={items}
+              disableDotsControls
+              disableButtonsControls
+              infinite
+              autoPlay
+              autoPlayInterval="2000"
+            />
+          </div>
+
           <article>
             <h4>Merci pour votre soutien</h4>
             <p>

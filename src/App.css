@@ -390,6 +390,24 @@ main, main * {
   margin-top: 2rem;
   overflow: hidden;
 }
+
+.carou {
+  width: 100vw;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carou * {
+  overflow: visible;
+}
+
+.carou img.soutien_home_img {
+  width: 100vw;
+  padding: 2rem;
+}
+
 /********************************************************************* Produits *********************************************************************/ 
 .produits {
   height: fit-content;
@@ -969,11 +987,6 @@ main, main * {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.soutien_home img {
-  width: 30vw ;
-  border-radius: 50%;
-  padding: 0;
-}
 
 .soutien_home div {
   display: flex;
@@ -990,8 +1003,27 @@ main, main * {
   margin-bottom: 10rem;
 }
 
+.soutien_home article {
+  width: 80%;
+  padding-top: 0;
+}
 .soutien_home a {
   height: fit-content;
+}
+
+.carou {
+  width: 50vw;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.soutien_home .carou .soutien_home_img {
+  max-width: 1%;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 2rem;
 }
 
 /******* Chances ****************/
@@ -1020,6 +1052,8 @@ main, main * {
 .chance_home button {
   margin: 4rem 2rem 10rem;
 }
+
+
 /********************************************************************* Produits *********************************************************************/ 
 
 .loading img {
