@@ -123,73 +123,73 @@ function Contact({ helmet }) {
               <div>
                 <div>
                   Lundi :{" "}
-                  {infos.LundiO === "Fermé" && infos.Lundi2O === "Fermé"
-                    ? infos.LundiO
+                  {infos.LundiO === "Ferme" && infos.Lundi2O === "Ferme"
+                    ? "Fermé"
                     : `${infos.LundiO} - ${infos.LundiF} | ${
-                        infos.Lundi2O === "Fermé" && infos.Lundi2F === "Fermé"
+                        infos.Lundi2O === "Ferme" && infos.Lundi2F === "Ferme"
                           ? "Fermé"
                           : `${infos.Lundi2O} - ${infos.Lundi2F}`
                       }`}
                 </div>
                 <div>
                   Mardi :{" "}
-                  {infos.MardiO === "Fermé" && infos.Mardi2O === "Fermé"
-                    ? infos.MardiO
+                  {infos.MardiO === "Ferme" && infos.Mardi2O === "Ferme"
+                    ? "Fermé"
                     : `${infos.MardiO} - ${infos.MardiF} | ${
-                        infos.Mardi2O === "Fermé" && infos.Mardi2F === "Fermé"
+                        infos.Mardi2O === "Ferme" && infos.Mardi2F === "Ferme"
                           ? "Fermé"
                           : `${infos.Mardi2O} - ${infos.Mardi2F}`
                       }`}
                 </div>
                 <div>
                   Mercredi :{" "}
-                  {infos.MercrediO === "Fermé" && infos.Mercredi2O === "Fermé"
-                    ? infos.MercrediO
+                  {infos.MercrediO === "Ferme" && infos.Mercredi2O === "Ferme"
+                    ? "Fermé"
                     : `${infos.MercrediO} - ${infos.MercrediF} | ${
-                        infos.Mercredi2O === "Fermé" &&
-                        infos.Mercredi2F === "Fermé"
+                        infos.Mercredi2O === "Ferme" &&
+                        infos.Mercredi2F === "Ferme"
                           ? "Fermé"
                           : `${infos.Mercredi2O} - ${infos.Mercredi2F}`
                       }`}
                 </div>
                 <div>
                   Jeudi :{" "}
-                  {infos.JeudiO === "Fermé" && infos.Jeudi2O === "Fermé"
-                    ? infos.JeudiO
+                  {infos.JeudiO === "Ferme" && infos.Jeudi2O === "Ferme"
+                    ? "Fermé"
                     : `${infos.JeudiO} - ${infos.JeudiF} | ${
-                        infos.Jeudi2O === "Fermé" && infos.Jeudi2F === "Fermé"
+                        infos.Jeudi2O === "Ferme" && infos.Jeudi2F === "Ferme"
                           ? "Fermé"
                           : `${infos.Jeudi2O} - ${infos.Jeudi2F}`
                       }`}
                 </div>
                 <div>
                   Vendredi :{" "}
-                  {infos.VendrediO === "Fermé" && infos.Vendredi2O === "Fermé"
-                    ? infos.VendrediO
+                  {infos.VendrediO === "Ferme" && infos.Vendredi2O === "Ferme"
+                    ? "Fermé"
                     : `${infos.VendrediO} - ${infos.VendrediF} | ${
-                        infos.Vendredi2O === "Fermé" &&
-                        infos.Vendredi2F === "Fermé"
+                        infos.Vendredi2O === "Ferme" &&
+                        infos.Vendredi2F === "Ferme"
                           ? "Fermé"
                           : `${infos.Vendredi2O} - ${infos.Vendredi2F}`
                       }`}
                 </div>
                 <div>
                   Samedi :{" "}
-                  {infos.SamediO === "Fermé" && infos.Samedi2O === "Fermé"
-                    ? infos.SamediO
+                  {infos.SamediO === "Ferme" && infos.Samedi2O === "Ferme"
+                    ? "Fermé"
                     : `${infos.SamediO} - ${infos.SamediF} | ${
-                        infos.Samedi2O === "Fermé" && infos.Samedi2F === "Fermé"
+                        infos.Samedi2O === "Ferme" && infos.Samedi2F === "Ferme"
                           ? "Fermé"
                           : `${infos.Samedi2O} - ${infos.Samedi2F}`
                       }`}
                 </div>
                 <div>
                   Dimanche :{" "}
-                  {infos.DimancheO === "Fermé" && infos.Dimanche2O === "Fermé"
-                    ? infos.DimancheO
+                  {infos.DimancheO === "Ferme" && infos.Dimanche2O === "Ferme"
+                    ? "Fermé"
                     : `${infos.DimancheO} - ${infos.DimancheF} | ${
-                        infos.Dimanche2O === "Fermé" &&
-                        infos.Dimanche2F === "Fermé"
+                        infos.Dimanche2O === "Ferme" &&
+                        infos.Dimanche2F === "Ferme"
                           ? "Fermé"
                           : `${infos.Dimanche2O} - ${infos.Dimanche2F}`
                       }`}
