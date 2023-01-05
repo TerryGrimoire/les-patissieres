@@ -151,6 +151,10 @@ header, header * {
   background-color: var(--light-color);
 }
 
+header {
+  position: relative;
+}
+
 .openBurger {
   z-index: 2;
   height: 100%;
@@ -196,17 +200,31 @@ button.croix {
   padding: 0.5rem;
 }
 
-.padding-header {
-  padding: 0 0.5rem;
+.header {
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .burger {
 height: 2rem;
+padding-left: 1rem;
 }
 
 .logo {
   height: 4rem;
+  padding-right: 1rem;
+}
+
+.header_bandereau {
+  width: 100%;
+  color: var(--main-bg-color);
+  font-weight: bolder;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.header_bandereau * {
+  color: var(--main-bg-color);
 }
 
 /********************************************************************* HOME *********************************************************************/ 
