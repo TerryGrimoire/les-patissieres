@@ -64,8 +64,8 @@ function Produits({ helmet }) {
 
     let obj = {};
     const json = data.map((line, index) => {
-      if (index > 1) {
-        data[1].forEach((key, j) => {
+      if (index > 0 && index < 8) {
+        data[0].forEach((key, j) => {
           obj = { ...obj, [key]: line[j] };
         });
       }
@@ -73,7 +73,7 @@ function Produits({ helmet }) {
     });
 
     json.shift();
-    setSpecial(json);
+    setSpecial([...new Set(json)]);
   };
 
   useEffect(() => {

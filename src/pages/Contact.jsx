@@ -9,6 +9,7 @@ import mastercard from "../assets/mastercard.png";
 import chequedej from "../assets/chequedej.png";
 import visa from "../assets/visa.png";
 import tickets from "../assets/tickets.png";
+import cheque from "../assets/cheque.png";
 
 function Contact({ helmet }) {
   useEffect(() => {
@@ -222,7 +223,7 @@ function Contact({ helmet }) {
         </div>
       </section>
       <div className="contact_paiements">
-        <h2>Paiement acceptés</h2>
+        <h2>Paiements acceptés</h2>
         <div>
           {infos.Carte === "OUI" && <img src={visa} alt="paiement en carte" />}
           {infos.Carte === "OUI" && (
@@ -233,6 +234,9 @@ function Contact({ helmet }) {
           )}
           {infos.Tickets === "OUI" && (
             <img src={chequedej} alt="paiement en tickets" />
+          )}
+          {infos.Cheque === "OUI" && (
+            <img src={cheque} alt="paiement en tickets" />
           )}
         </div>
       </div>
