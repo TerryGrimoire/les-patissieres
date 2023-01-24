@@ -455,12 +455,14 @@ main, main * {
 .produits img {
   width: 100%;
 }
-
+.produits img.img_du_carousel {
+  height: auto;
+}
 .produits .arrow {
   width: fit-content;
   height: fit-content;
   position: absolute;
-  top: 35%;
+  top: 45%;
   background-color: transparent;
   opacity: 40%;
 
@@ -1169,6 +1171,18 @@ font-size: 1.2rem;
   margin:1rem auto 8rem;
 }
 
+.produits {
+  padding: 0 15rem;
+  overflow: hidden;
+}
+
+.produits .alice-carousel {
+  overflow: hidden;
+}
+
+.produits .arrow {
+  top: 40%;
+}
 
 /********************************************************************* SOUTIEN *********************************************************************/ 
 .soutien_container {

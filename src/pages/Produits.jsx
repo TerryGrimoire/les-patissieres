@@ -10,12 +10,6 @@ import Menu1 from "../assets/Menu1.jpg";
 import Menu2 from "../assets/Menu2.jpg";
 import Menu3 from "../assets/Menu3.jpg";
 import Menu4 from "../assets/Menu4.jpg";
-import Menu5 from "../assets/Menu5.jpg";
-import Menu6 from "../assets/Menu6.jpg";
-import Menu7 from "../assets/Menu7.jpg";
-import Menu8 from "../assets/Menu8.jpg";
-import Menu9 from "../assets/Menu9.jpg";
-import Menu10 from "../assets/Menu10.jpg";
 
 function Produits({ helmet }) {
   useEffect(() => {
@@ -23,18 +17,7 @@ function Produits({ helmet }) {
   }, []);
 
   const [special, setSpecial] = useState([]);
-  const menu = [
-    Menu1,
-    Menu2,
-    Menu3,
-    Menu4,
-    Menu5,
-    Menu6,
-    Menu7,
-    Menu8,
-    Menu9,
-    Menu10,
-  ];
+  const menu = [Menu1, Menu2, Menu3, Menu4];
   const handleDragStart = (e) => e.preventDefault();
 
   const responsive = {
@@ -52,6 +35,7 @@ function Produits({ helmet }) {
       onDragStart={handleDragStart}
       role="presentation"
       alt="presentation du menu"
+      className="img_du_carousel"
     />
   ));
 
@@ -162,7 +146,6 @@ function Produits({ helmet }) {
         <AliceCarousel
           mouseTracking
           disableDotsControls
-          infinite
           items={items}
           responsive={responsive}
           keyboardNavigation
