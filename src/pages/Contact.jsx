@@ -85,8 +85,9 @@ function Contact({ helmet }) {
 
       {infos.Numéro ? (
         <div className="contact_top">
-          <h1>Nous joindre</h1>
+          <h1>Où et quand aller chez Les Pâtissières</h1>
           <div>
+            <h2>Commandez vos pâtisseries et vos plats péi</h2>
             <p>
               <img src={telephone} alt="telephone pour contact" />{" "}
               {infos.Numéro}
@@ -124,73 +125,73 @@ function Contact({ helmet }) {
                 <div>
                   Lundi :{" "}
                   {infos.LundiO === "Ferme" && infos.Lundi2O === "Ferme"
-                    ? "Fermé"
+                    ? "Fermé (ouvert pour les commandes)"
                     : `${infos.LundiO} - ${infos.LundiF} | ${
                         infos.Lundi2O === "Ferme" && infos.Lundi2F === "Ferme"
-                          ? "Fermé"
+                          ? "Fermé (ouvert pour les commandes)"
                           : `${infos.Lundi2O} - ${infos.Lundi2F}`
                       }`}
                 </div>
                 <div>
                   Mardi :{" "}
                   {infos.MardiO === "Ferme" && infos.Mardi2O === "Ferme"
-                    ? "Fermé"
+                    ? "Fermé (ouvert pour les commandes)"
                     : `${infos.MardiO} - ${infos.MardiF} | ${
                         infos.Mardi2O === "Ferme" && infos.Mardi2F === "Ferme"
-                          ? "Fermé"
+                          ? "Fermé (ouvert pour les commandes)"
                           : `${infos.Mardi2O} - ${infos.Mardi2F}`
                       }`}
                 </div>
                 <div>
                   Mercredi :{" "}
                   {infos.MercrediO === "Ferme" && infos.Mercredi2O === "Ferme"
-                    ? "Fermé"
+                    ? "Fermé (ouvert pour les commandes)"
                     : `${infos.MercrediO} - ${infos.MercrediF} | ${
                         infos.Mercredi2O === "Ferme" &&
                         infos.Mercredi2F === "Ferme"
-                          ? "Fermé"
+                          ? "Fermé (ouvert pour les commandes)"
                           : `${infos.Mercredi2O} - ${infos.Mercredi2F}`
                       }`}
                 </div>
                 <div>
                   Jeudi :{" "}
                   {infos.JeudiO === "Ferme" && infos.Jeudi2O === "Ferme"
-                    ? "Fermé"
-                    : `${infos.JeudiO} - ${infos.JeudiF} | ${
+                    ? "Fermé (ouvert pour les commandes)"
+                    : `${infos.JeudiO} - ${infos.JeudiF}  ${
                         infos.Jeudi2O === "Ferme" && infos.Jeudi2F === "Ferme"
-                          ? "Fermé"
+                          ? ""
                           : `${infos.Jeudi2O} - ${infos.Jeudi2F}`
                       }`}
                 </div>
                 <div>
                   Vendredi :{" "}
                   {infos.VendrediO === "Ferme" && infos.Vendredi2O === "Ferme"
-                    ? "Fermé"
+                    ? "Fermé (ouvert pour les commandes)"
                     : `${infos.VendrediO} - ${infos.VendrediF} | ${
                         infos.Vendredi2O === "Ferme" &&
                         infos.Vendredi2F === "Ferme"
-                          ? "Fermé"
+                          ? "Fermé (ouvert pour les commandes)"
                           : `${infos.Vendredi2O} - ${infos.Vendredi2F}`
                       }`}
                 </div>
                 <div>
                   Samedi :{" "}
                   {infos.SamediO === "Ferme" && infos.Samedi2O === "Ferme"
-                    ? "Fermé"
-                    : `${infos.SamediO} - ${infos.SamediF} | ${
+                    ? "Fermé (ouvert pour les commandes)"
+                    : `${infos.SamediO} - ${infos.SamediF}  ${
                         infos.Samedi2O === "Ferme" && infos.Samedi2F === "Ferme"
-                          ? "Fermé"
+                          ? ""
                           : `${infos.Samedi2O} - ${infos.Samedi2F}`
                       }`}
                 </div>
                 <div>
                   Dimanche :{" "}
                   {infos.DimancheO === "Ferme" && infos.Dimanche2O === "Ferme"
-                    ? "Fermé"
+                    ? "Fermé (ouvert durant la période des baptêmes, communions et confirmations)"
                     : `${infos.DimancheO} - ${infos.DimancheF} | ${
                         infos.Dimanche2O === "Ferme" &&
                         infos.Dimanche2F === "Ferme"
-                          ? "Fermé"
+                          ? "Fermé (ouvert durant la période des baptêmes, communions et confirmations)"
                           : `${infos.Dimanche2O} - ${infos.Dimanche2F}`
                       }`}
                 </div>

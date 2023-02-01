@@ -262,7 +262,9 @@ main, main * {
 
 .landing_page h2 {
   font-size: 1rem;
+  font-family: var(--font-text);
 }
+
 .landing_page h1, .landing_page h2 {
   background-color: transparent;
   padding: 0.5rem 2rem;
@@ -308,8 +310,6 @@ main, main * {
 
   .histoire img {
     width: 100%;
-    padding: 1rem;
-    border-radius: 1.5rem;
   }
 
   .histoire article {
@@ -423,9 +423,30 @@ main, main * {
 
 .carou img.soutien_home_img {
   width: 100vw;
-  padding: 2rem;
 }
 
+.confiance {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem ;
+}
+.confiance img {
+  width: 7rem;
+  height:7rem;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 1rem;
+
+}
+
+.soutien_home article {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
 /********************************************************************* Produits *********************************************************************/ 
 .produits {
   height: fit-content;
@@ -906,7 +927,7 @@ main, main * {
     display: flex;
     width: 100%;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     height: fit-content;
   }
 
@@ -917,9 +938,13 @@ main, main * {
   }
 
   .histoire img {
-    min-width: 35vw;
-    padding: 1rem;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    min-width: 25vw;
+    width: 25vw;
+    height: 25vw;
+    padding: 0rem;
+    object-fit: cover;
+    object-position: 0rem;
+    border-radius: 50%;
     box-shadow: var(--box-shadow);
     margin: 1rem;
   }
@@ -1015,7 +1040,7 @@ main, main * {
 
 .soutien_home div {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -1031,9 +1056,7 @@ main, main * {
 .soutien_home article {
   width: 80%;
   padding-top: 0;
-}
-.soutien_home a {
-  height: fit-content;
+  margin: 5rem 0 10rem;
 }
 
 .carou {
@@ -1044,33 +1067,48 @@ main, main * {
   align-items: center;
 }
 
-.soutien_home .carou .soutien_home_img {
-  max-width: 1%;
-  height: auto;
+
+.soutien_home div.confiance {
+  margin: 2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: fit-content
+}
+.soutien_home div.confiance img {
+  margin: 2rem;
   border-radius: 50%;
-  margin: 0 2rem;
+  height: 5rem;
+  width: 5rem;
+  object-fit:cover;
+  min-width: initial;
+  padding: 0;
 }
 
+.soutien_home div.confiance p {
+  display: inline-block;
+}
 /******* Chances ****************/
 
 .chance_home div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   height: fit-content;
   overflow: hidden;
 }
 
 .chance_home iframe {
-  width: 80vw;
-  height: 46vh;
+  width:45vw;
+  height: 60vh;
   border: none;
 }
 
 .chance_home article {
   width: 100%;
+  padding: 0 5rem;
 }
 
 .chance_home button {

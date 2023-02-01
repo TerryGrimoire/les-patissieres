@@ -19,7 +19,7 @@ function Nav({ setOpenBurger }) {
       </Link>
       <Link to="/Produits">
         <button type="button" onClick={() => setOpenBurger(false)}>
-          Nos Pâtisseries
+          La carte
         </button>
       </Link>
       <Link to="/Soutien">
