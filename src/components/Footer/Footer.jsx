@@ -34,7 +34,10 @@ function Footer() {
         </ul>
       </div>
       <div className="footer_contact">
-        <h4>Retrouvez nous sur les réseaux</h4>
+        <h4>
+          Retrouvez vos prochains bonheurs saveurs péi sucrés ou salés sur les
+          réseaux
+        </h4>
 
         <ul className="socialMedia_container">
           <li>

@@ -109,16 +109,27 @@ function Produits({ helmet }) {
           </svg>
         </div>
         <h1>Notre carte</h1>
+        <h2>Des pâtisseries et des plats aux saveurs péi pour vous régaler</h2>
         <p>
-          Notre carte est régulièrement mise à jour car nos produits sont
-          séléctionnés avec soin pour vous garantir des pâtisseries et repas de
-          qualité.
+          Vous vous réunissez autour d&#39;un petit déjeuner d&#39;équipe, un
+          cocktail déjeunatoire, un goûter d&#39;anniversaire ?
         </p>
+        <p>Entre amis, entre collègues, entre partenaires ?</p>
+        <p>
+          Dégustez nos créations originales, goûteuses, et qui mettent en avant
+          les fruits et légumes locaux, et les saveurs péi.
+        </p>
+        <p>
+          Commandes à récupérer dans notre atelier du Bas de la Rivière, ou à
+          faire livrer.
+        </p>
+        <p>Avec ou sans service.</p>
       </section>
 
       {special.length > 0 ? (
         <div className="produits_special">
           <h2>À la carte en ce moment</h2>
+          <small>Édition limitée</small>
           <div className="special_container">
             {special
               .filter((el) => parseInt(el.Date, 10) >= parseInt(today, 10))
@@ -131,6 +142,9 @@ function Produits({ helmet }) {
                 </div>
               ))}
           </div>
+          <button type="button" className="button_style">
+            Je réserve maintenant
+          </button>
         </div>
       ) : (
         <div className="loading">
@@ -167,9 +181,29 @@ function Produits({ helmet }) {
 
         <Link to="/contact">
           <button type="button" className="button_style">
-            Réserver maintenant
+            Je réserve maintenant
           </button>
         </Link>
+      </section>
+      <section className="rel autres_commandes">
+        <h2>Autres commandes personnalisées</h2>
+        <p>
+          Vous voulez vous faire plaisir avec de délicieuses pâtisseries ?
+          <br />
+          Vous êtes sans gluten, produits laitiers, œufs ? <br />
+          Vous êtes vegan ?
+        </p>
+        <p>
+          Contactez-nous pour profiter de notre gamme adaptée à vos besoins et
+          vos envies.
+        </p>
+        <p>
+          Plus de fruits, moins de sucre, le respect des saisons et beaucoup de
+          saveurs de La Réunion, c&#39;est l&#39;esprit Les Pâtissières.
+        </p>
+        <button type="button" className="button_style">
+          Je réserve maintenant
+        </button>
         <div className="custom-shape-divider-bottom-1671378180">
           <svg
             data-name="Layer 1"

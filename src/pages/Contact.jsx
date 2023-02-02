@@ -85,7 +85,20 @@ function Contact({ helmet }) {
 
       {infos.Numéro ? (
         <div className="contact_top">
-          <h1>Où et quand aller chez Les Pâtissières</h1>
+          <h1>Contact</h1>
+          <div>
+            <h2>Où et quand aller chez Les Pâtissières</h2>
+            <p>
+              Venez vous régaler avec… <br />
+              <span>
+                • nos savoureuses saveurs péi en version sucrée ou salée,
+              </span>
+              <span>
+                • nos délicieux plats végétariens aux épices et aromates locaux.
+              </span>
+            </p>
+          </div>
+
           <div>
             <h2>Commandez vos pâtisseries et vos plats péi</h2>
             <p>

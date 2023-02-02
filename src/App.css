@@ -18,6 +18,9 @@
 .desktop {
   display: none;
 }
+.rel {
+  position: relative;
+}
 * {
   margin: 0;
   padding: 0;
@@ -304,8 +307,9 @@ main, main * {
   .histoire h3 {
     font-size: 3rem;
     padding: 1rem;
-    text-align: left;
+    margin: 1rem 0;
     width: 100%;
+    text-align: center;
   }
 
   .histoire img {
@@ -506,7 +510,6 @@ main, main * {
 
 .produits h2 {
   padding: 2rem;
-  margin: 2rem;
 }
 
 .produits_top {
@@ -519,8 +522,20 @@ main, main * {
   margin-top: 5rem;
 }
 
+.produits_top h2 {
+  margin: 2rem 0;
+}
+
+.produits_top p {
+  margin: 1rem 0;
+} 
+
 .produits_special {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .special_container > div {
@@ -536,13 +551,13 @@ font-size: 1.2rem;
   margin-top: 0.5rem;
 }
 
-.produits_special h2, .produits h2 {
+.produits_special h2, .produits h2, .autres_commandes h2 {
   background-color: var(--light-color);
   color: var(--main-bg-color);
-  border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   margin-bottom: 2rem;
   text-align: center;
+  width: 100vw;
 }
 
 .produits a {
@@ -552,6 +567,24 @@ font-size: 1.2rem;
 .produits button {
   margin:1rem auto 8rem;
 }
+
+.autres_commandes {
+  padding-bottom: 10rem;
+  margin-top: -8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.autres_commandes p, .autres_commandes h2 {
+  padding: 1rem 2rem;
+}
+
+.autres_commandes button {
+  margin-top: 3rem;
+}
+
 
 /********************************************************************* SOUTIEN *********************************************************************/ 
 .soutien_container {
@@ -631,13 +664,17 @@ font-size: 1.2rem;
 margin: 8rem 0 2rem;
 }
 
+.contact_top h2 {
+  margin: 2rem 0;
+}
+
 .contact_top div {
   padding: 2rem;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: left;
 }
 
 .contact_top p {
@@ -645,6 +682,18 @@ margin: 8rem 0 2rem;
   margin: 2rem 0;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
+}
+
+.contact_top div:first-of-type p {
+  flex-direction: column;
+  text-align: left;
+  margin: 0;
+  align-items: flex-start;
+}
+
+.contact_top span {
+  margin: 2rem 1rem 0;
 }
 
 .contact_top p img {
