@@ -128,8 +128,10 @@ function Produits({ helmet }) {
 
       {special.length > 0 ? (
         <div className="produits_special">
-          <h2>À la carte en ce moment</h2>
-          <small>Édition limitée</small>
+          <h2>
+            En ce moment <small>(Édition limitée)</small>
+          </h2>
+
           <div className="special_container">
             {special
               .filter((el) => parseInt(el.Date, 10) >= parseInt(today, 10))
@@ -187,12 +189,10 @@ function Produits({ helmet }) {
       </section>
       <section className="rel autres_commandes">
         <h2>Autres commandes personnalisées</h2>
-        <p>
-          Vous voulez vous faire plaisir avec de délicieuses pâtisseries ?
-          <br />
-          Vous êtes sans gluten, produits laitiers, œufs ? <br />
-          Vous êtes vegan ?
-        </p>
+        <p>Vous voulez vous faire plaisir avec de délicieuses pâtisseries ? </p>
+        <p> Vous êtes sans gluten, produits laitiers, œufs ?</p>
+
+        <p> Vous êtes vegan ?</p>
         <p>
           Contactez-nous pour profiter de notre gamme adaptée à vos besoins et
           vos envies.

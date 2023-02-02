@@ -86,33 +86,37 @@ function Contact({ helmet }) {
       {infos.Numéro ? (
         <div className="contact_top">
           <h1>Contact</h1>
-          <div>
-            <h2>Où et quand aller chez Les Pâtissières</h2>
-            <p>
-              Venez vous régaler avec… <br />
-              <span>
-                • nos savoureuses saveurs péi en version sucrée ou salée,
-              </span>
-              <span>
-                • nos délicieux plats végétariens aux épices et aromates locaux.
-              </span>
-            </p>
-          </div>
+          <section>
+            <div>
+              <h2>Où et quand aller chez Les Pâtissières</h2>
+              <p>
+                Venez vous régaler avec… <br />
+                <span>
+                  • nos savoureuses saveurs péi en version sucrée ou salée,
+                </span>
+                <span>
+                  • nos délicieux plats végétariens aux épices et aromates
+                  locaux.
+                </span>
+              </p>
+            </div>
 
-          <div>
-            <h2>Commandez vos pâtisseries et vos plats péi</h2>
-            <p>
-              <img src={telephone} alt="telephone pour contact" />{" "}
-              {infos.Numéro}
-            </p>
-            <p>
-              <img src={email} alt="enveloppe avec signe @" /> {infos.Email}
-            </p>
-            <p>
-              <img src={adresse} alt="pin de localisation sur une carte" />
-              {infos.Adresse}
-            </p>
-          </div>
+            <div>
+              <h2>Commandez vos pâtisseries et vos plats péi</h2>
+              <p>
+                <img src={telephone} alt="telephone pour contact" />{" "}
+                {infos.Numéro}
+              </p>
+              <p>
+                <img src={email} alt="enveloppe avec signe @" /> {infos.Email}
+              </p>
+              <p>
+                <img src={adresse} alt="pin de localisation sur une carte" />
+                {infos.Adresse}
+              </p>
+            </div>
+          </section>
+
           <iframe src={infos.Maps} title="iframe google maps" />
         </div>
       ) : (

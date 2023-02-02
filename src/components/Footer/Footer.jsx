@@ -20,9 +20,6 @@ function Footer() {
             <Link to="/Produits">Nos Pâtisseries</Link>
           </li>
           <li>
-            <Link to="/Soutien">Nous soutenir</Link>
-          </li>
-          <li>
             <Link to="/Contact">Contact</Link>
           </li>
           <li>

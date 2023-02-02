@@ -22,11 +22,6 @@ function Nav({ setOpenBurger }) {
           La carte
         </button>
       </Link>
-      <Link to="/Soutien">
-        <button type="button" onClick={() => setOpenBurger(false)}>
-          Nous soutenir
-        </button>
-      </Link>
       <Link to="/Contact">
         <button type="button" onClick={() => setOpenBurger(false)}>
           Contact
