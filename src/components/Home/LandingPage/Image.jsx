@@ -17,7 +17,7 @@ function Image({ title }) {
 
   const landingData = {
     h2: "Régalez-vous avec des saveurs péi au goût du jour !",
-    h3: "Fabricantes de bonheur sucrés ou salés pour petits et grands depuis 2012",
+    h3: "Fabricantes de bonheurs sucrés ou salés pour petits et grands depuis 2012",
     alt: "decription de l'image",
   };
   return (
